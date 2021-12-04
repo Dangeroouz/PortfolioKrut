@@ -92,3 +92,6 @@ body{
     color: #242424;
     transition: 0.8s;
 }
+::selection {background: #08fdd8;}
+::-moz-selection {background: #08fdd8;}
+::-webkit-selection {background: #08fdd8; color:#fff;}
