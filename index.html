@@ -11,18 +11,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Asap:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/tilt.jquery.js"></script>
     <div class="container">
     <nav class="side_nav">
         <div class="side_nav_title">=
-            <img class="logo" src="" alt="">
+            <img class="logo" src="img/logo.png" alt="">
             <a class="page_a" href="#">Dan</a>
             <p class="side_nav_p">Web Developer</p>
         </div>
-        <div class="side_nav_main">
+        <div  class="side_nav_main">
             <div class="side_nav_main_a">
-                <a href="">Abour</a>
+                <a href="">About</a>
                 <a href="">My Skills</a>
-                <a href="">Work</a>
+                <a href="">Projects</a>
                 <a href="">Contact</a>
             </div>
         </div>
@@ -36,9 +38,31 @@
         <div class="main_title_block">
             <h2 class="main_title"><span class="main_title_letterSpan">H</span><span class="main_title_letterSpan">i</span><span class="main_title_letterSpan">,</span></h2>
             <h2 class="main_title"><span class="main_title_letterSpan">I</span><span class="main_title_letterSpan">`</span><span class="main_title_letterSpan">m </span><span class="main_title_letterSpan">D</span><span class="main_title_letterSpan">a</span><span class="main_title_letterSpan">n</span><span class="main_title_letterSpan">,</span></h2>
-            <h2 class="main_title"><span class="main_title_letterSpan">w</span><span class="main_title_letterSpan">e</span><span class="main_title_letterSpan">b</span><span class="main_title_letterSpan"> d</span><span class="main_title_letterSpan">e</span><span class="main_title_letterSpan">l</span><span class="main_title_letterSpan">e</span><span class="main_title_letterSpan">l</span><span class="main_title_letterSpan">o</span><span class="main_title_letterSpan">p</span><span class="main_title_letterSpan">e</span><span class="main_title_letterSpan">r</span></h2>
+            <h2 class="main_title"><span class="main_title_letterSpan">w</span><span class="main_title_letterSpan">e</span><span class="main_title_letterSpan">b</span><span class="main_title_letterSpan"> d</span><span class="main_title_letterSpan">e</span><span class="main_title_letterSpan">v</span><span class="main_title_letterSpan">e</span><span class="main_title_letterSpan">l</span><span class="main_title_letterSpan">o</span><span class="main_title_letterSpan">p</span><span class="main_title_letterSpan">e</span><span class="main_title_letterSpan">r</span></h2>
             <p class="main_downtitle">//Front End Developer// </p>
             <button class="main_title_block_button">Contact me!</button>
+        </div>
+        <div class="about">
+            <div class="about_left">
+                <h2 class="about_h2">Who i am?</h2>
+                <div class="about_text">
+                    <p class="about_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum tempora nemo obcaecati voluptatem ipsam architecto atque nesciunt consequatur dolore sit?</p>
+                    <p class="about_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptate est, odit praesentium nostrum voluptatem atque amet rerum <span class="main_color">aperiam voluptates</span> cumque quasi architecto in libero, accusantium dolores commodi mollitia cum! Autem odio voluptatum qui.</p>
+                    <p class="about_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed excepturi molestias assumenda maxime voluptatum.</p>
+                </div>
+            </div>
+            <div data-tilt class="about_right">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <script src="js/tilt.jquery.js"></script>
+                <script>
+                    $(document).ready(function(){
+                        $('.js-tilt').tilt({
+                            scale: 3
+                        })
+                    })
+                </script>
+                <img  src="img/htmlcssjs.png">
+            </div>
         </div>
     </main>
     </div>
