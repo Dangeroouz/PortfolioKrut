@@ -15,23 +15,25 @@
     <script src="js/tilt.jquery.js"></script>
     <div class="container">
     <nav class="side_nav">
-        <div class="side_nav_title">=
-            <img class="logo" src="img/logo.png" alt="">
-            <a class="page_a" href="#">Dan</a>
-            <p class="side_nav_p">Web Developer</p>
-        </div>
-        <div  class="side_nav_main">
-            <div class="side_nav_main_a">
-                <a href="">About</a>
-                <a href="">My Skills</a>
-                <a href="">Projects</a>
-                <a href="">Contact</a>
+        <div class="side_nav_container">
+            <div class="side_nav_title">=
+                <img class="logo" src="img/logo.png" alt="">
+                <a class="page_a" href="#">Dan</a>
+                <p class="side_nav_p">Web Developer</p>
             </div>
-        </div>
-        <div class="side_nav_main_links">
-            <a href=""><img width="17" src="img/telegram.png" alt=""></a>
-            <a href=""><img width="17" src="img/github.png" alt=""></a>
-            <a href=""><img  width="17"src="img/instagram.png" alt=""></a>
+            <div  class="side_nav_main">
+                <div class="side_nav_main_a">
+                    <a href="">About</a>
+                    <a href="">My Skills</a>
+                    <a href="">Projects</a>
+                    <a href="">Contact</a>
+                </div>
+            </div>
+            <div class="side_nav_main_links">
+                <a href=""><img width="17" src="img/telegram.png" alt=""></a>
+                <a href=""><img width="17" src="img/github.png" alt=""></a>
+                <a href=""><img  width="17"src="img/instagram.png" alt=""></a>
+            </div>
         </div>
     </nav>
     <main class="main">
@@ -54,17 +56,88 @@
             <div data-tilt class="about_right">
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
                 <script src="js/tilt.jquery.js"></script>
-                <script>
-                    $(document).ready(function(){
-                        $('.js-tilt').tilt({
-                            scale: 3
-                        })
-                    })
-                </script>
                 <img  src="img/htmlcssjs.png">
             </div>
         </div>
+        <div class="my_projects">
+            <div class="my_projects_container">
+                <h2 class="my_projects_h1">My Projects</h2>
+                <p class="my_projects_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem magnam corrupti maiores provident modi iusto culpa accusamus necessitatibus sunt! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet fugiat libero quia.</p>
+                <div class="my_projects_grid" id="my_projects">
+                    <a href="#popup" >
+                        <img src="img/project1.png" alt="">
+                    </a>
+                    <a href="#popup2" >
+                        <img src="img/project2.png" alt="">
+                    </a>
+                    <a href="#popup3" >
+                        <img src="img/project3.png" alt="">
+                    </a>
+                    <a href="#popup4" > 
+                        <img src="img/project4.png" alt="">
+                    </a>
+                    <a href="#popup5" > 
+                        <img src="img/project5.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
     </main>
+    </div>
+    <div id="popup" class="popup">
+        <a href="#my_projects" class="popup_area"></a>
+        <div class="popup_body">
+            <div class="popup_content">
+                <a href="#my_projects" class="popup_close"><img width="30" src="img/close.png" alt=""></a>
+                <div class="popup_img">
+                    <Img src="img/bigproject1.png" width="800"></Img>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup2" class="popup">
+        <a href="#my_projects" class="popup_area"></a>
+        <div class="popup_body">
+            <div class="popup_content">
+                <a href="#my_projects" class="popup_close"><img width="30" src="img/close.png" alt=""></a>
+                <div class="popup_img">
+                    <Img src="img/bigproject2.png" width="800"></Img>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup3" class="popup">
+        <a href="#my_projects" class="popup_area"></a>
+        <div class="popup_body">
+            <div class="popup_content">
+                <a href="#my_projects" class="popup_close"><img width="30" src="img/close.png" alt=""></a>
+                <div class="popup_img">
+                    <Img src="img/bigproject3.png" width="800"></Img>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup4" class="popup">
+        <a href="#my_projects" class="popup_area"></a>
+        <div class="popup_body">
+            <div class="popup_content">
+                <a href="#my_projects" class="popup_close"><img width="30" src="img/close.png" alt=""></a>
+                <div class="popup_img">
+                    <Img src="img/bigproject4.png" width="800"></Img>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup5" class="popup">
+        <a href="#my_projects" class="popup_area"></a>
+        <div class="popup_body">
+            <div class="popup_content">
+                <a href="#my_projects" class="popup_close"><img width="30" src="img/close.png" alt=""></a>
+                <div class="popup_img">
+                    <Img src="img/bigproject5.png" width="800"></Img>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
