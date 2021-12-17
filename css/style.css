@@ -1,12 +1,13 @@
 body{
     margin: 0;
     overflow-x: hidden;
+   
 }
 *{
     font-family: 'Asap', sans-serif;
 }
 .side_nav{
-    width: 6.5vw;
+    width: 6.5%;
     position: fixed;
     height: 100%;
     background-color: #242424;
@@ -40,7 +41,6 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-size: 14px;  
     
 }
 .side_nav_main_a a{
@@ -63,7 +63,7 @@ body{
     display: flex;
 }
 .main{
-    margin-left: 6.5vw;
+    margin-left: 6.5%;
     background-color: #1f1e1e;
     height: 100%;
     width: 100%;
@@ -126,8 +126,12 @@ body{
 .about_right{
     margin-right: 15vw;
     padding: 30px;
+    
 }
-.my_projects_h1{
+.my_skills_container{
+    display: flex;
+}
+.my_projects_h2{
     color: #08fdd8;
     padding-left: 80px;
     font-size: 70px;
@@ -138,17 +142,79 @@ body{
     color: white;
     width: 600px;
     padding-bottom: 70px;
+    font-family: 'Open Sans', sans-serif;
 }
-.my_projects_grid img{
-    width: 18.3vw;
+.my_projects_flex img{
     opacity: 0.6;
-    
+    width: 18.6vw;
 }
-.my_projects_grid img:hover{
+.my_projects_flex{
+    display: flex;
+}
+.my_projects_flex img:hover{
     transform: scale(1.1);
     transition: 0.3s;
     opacity: 1;
 }
+.my_skills_h2{
+    color: #08fdd8;
+    padding-left: 80px;
+    font-size: 70px;
+    margin: 0;
+}
+.my_skills_h2:nth-child(1){
+    margin-top: 100px;
+}
+.my_skills_p{
+    padding-left: 90px;
+    font-size: 17px;
+    color: white;
+    width: 40vw;
+    
+    font-family: 'Open Sans', sans-serif;
+}
+.my_skills_container_right{
+    padding-right: 100px;
+    padding-left: 100px;
+    width: 100%;
+    margin-top: 100px;
+}
+.my_skills_container_right h3{
+    color: white;
+}
+.chart{
+    display: flex;
+    height: 2px;
+    background: rgb(59, 59, 59);
+    margin: 0;
+}
+.progress_scale1{
+    background: #08fdd8;
+    height: 100%;
+    width: 93%;
+}
+.progress_scale2{
+    background: #d61740;
+    height: 100%;
+    width: 88%;
+}
+.progress_scale3{
+    background: #812dc5;
+    height: 100%;
+    width: 40%;
+}
+.progress_scale4{
+    background: #08fdd8;
+    height: 100%;
+    width: 96%;
+}
+
+
+
+
+
+
+
 .popup{
     position: fixed;
     width: 100%;
