@@ -1,7 +1,7 @@
 body{
     margin: 0;
     overflow-x: hidden;
-   
+    font-size: 14px;
 }
 .flex{
     display: flex;
@@ -16,14 +16,15 @@ body{
     background-color: #242424;
 }
 .side_nav_container{
-    height: 110%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: space-around;
 }
 .side_nav_title{
     background-color: #181818;
-    height: 160px;
+    height: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,6 +45,7 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
+    height: 100%;
     
 }
 .side_nav_main_a a{
@@ -51,17 +53,20 @@ body{
     color: rgb(155, 155, 155);
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
-    font-size: calc(12px + 4 * (100vw / 1920));
+    font-size: 1em;
 }
 .side_nav_main_a a:hover{
     color: #08fdd8;
     transition: 0.3s;
 }
 .side_nav_main_links{
-    margin-bottom: 240px;
+    margin-bottom: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: 10px;
+}
+.side_nav_main_links img{
+    width: 15px;
 }
 .container{
     display: flex;
@@ -83,7 +88,7 @@ body{
     transition: 0.4s;
 }
 .main_title_block{
-    padding-top: 250px;
+    padding-top: 15%;
     padding-left: 80px;
 }
 .main_downtitle{
@@ -151,7 +156,7 @@ body{
 }
 .my_projects_flex img{
     opacity: 0.6;
-    width: 18.6vw;
+    width: 100%;
 }
 .my_projects_flex{
     display: flex;
@@ -181,8 +186,11 @@ body{
 .my_skills_container_right{
     padding-right: 100px;
     padding-left: 100px;
-    width: 100%;
+    width: 50%;
     margin-top: 100px;
+}
+.my_skills_container_left{
+    width: 50%;
 }
 .my_skills_container_right h3{
     color: white;
@@ -223,7 +231,7 @@ body{
     padding-left: 100px;
     font-size: 17px;
     color: white;
-    width: 700px;
+    width: 80%;;
     padding-bottom: 20px;
     font-family: 'Open Sans', sans-serif;
 }
@@ -255,7 +263,10 @@ body{
     color: #08fdd8;
 }
 .contacts_right{
-    width: 100%;
+    width: 50%;
+}
+.contacts_left{
+    width: 50%;
 }
 .contacts_map{
     width: 100%;
@@ -275,6 +286,7 @@ body{
     margin-left: 74%;
     margin-top: 20px;
     letter-spacing: 4px;
+    padding: 0px 10px;
 }
 .contacts_send_but:hover{
     background: #08fdd8;
