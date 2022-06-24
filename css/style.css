@@ -1,16 +1,20 @@
 html{
     scroll-behavior: smooth;
 }
+*{
+    font-family: 'Asap', sans-serif;
+   
+}
 body{
     margin: 0;
     overflow-x: hidden;
-    font-size: 14px;
+    font-size: .875em;
 }
 .flex{
     display: flex;
 }
-*{
-    font-family: 'Asap', sans-serif;
+.main{
+    width: auto !important;
 }
 .side_nav{
     width: 6.5%;
@@ -36,12 +40,15 @@ body{
 .page_a{
     color: white;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 1.5em;
+}
+@media screen and (max-width: 1300px){
+    
 }
 .side_nav_p{
     color: rgb(155, 155, 155);
     margin-top: 20px;
-    font-size: 10px;
+    font-size: 1rem;
 }
 .side_nav_main_a{
     color: white;
@@ -56,7 +63,7 @@ body{
     color: rgb(155, 155, 155);
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
+    font-size: 1rem;
 }
 .side_nav_main_a a:hover{
     color: #08fdd8;
@@ -66,10 +73,7 @@ body{
     margin-bottom: 100%;
     display: flex;
     justify-content: space-around;
-    padding: 10px;
-}
-.side_nav_main_links img{
-    width: 15px;
+    padding: .625rem;
 }
 .container{
     display: flex;
@@ -84,7 +88,7 @@ body{
 .main_title{
     color: white;
     margin: 0px;
-    font-size: 86px;
+    font-size: 5.375rem ;
 }
 .main_title_letterSpan:hover{
     color: #08fdd8;
@@ -131,7 +135,7 @@ body{
 }
 .about_p{
     color: white;
-    font-size: 17px;
+    font-size: 1.0625rem;
     width: 60%;
     padding-left: 20px;
     font-family: 'Open Sans', sans-serif;
@@ -148,13 +152,13 @@ body{
 .my_projects_h2{
     color: #08fdd8;
     padding-left: 80px;
-    font-size: 70px;
+    font-size: 4.375rem;
     margin-bottom: 20px;
     margin-top: 40px;
 }
 .my_projects_p{
     padding-left: 100px;
-    font-size: 17px;
+    font-size: 1.0625rem;
     color: white;
     width: 600px;
     padding-bottom: 70px;
@@ -185,7 +189,7 @@ body{
 .my_skills_h2{
     color: #08fdd8;
     padding-left: 80px;
-    font-size: 70px;
+    font-size: 4.375rem;
     margin: 0;
 }
 .my_skills_h2:nth-child(1){
@@ -193,7 +197,7 @@ body{
 }
 .my_skills_p{
     padding-left: 90px;
-    font-size: 17px;
+    font-size: 1.0625em;
     color: white;
     width: 80%;
     
@@ -240,12 +244,12 @@ body{
 .contacts_h2{
     color: #08fdd8;
     padding-left: 80px;
-    font-size: 70px;
+    font-size: 4.375em;
     margin: 0;
 }
 .contacts_p{
     padding-left: 100px;
-    font-size: 17px;
+    font-size: 1.0625em;
     color: white;
     width: 80%;;
     padding-bottom: 20px;
@@ -364,4 +368,159 @@ body{
     width: 200px;
     height: 200px;
     background: white;
+}
+.contacts_right{
+    overflow: hidden;
+}
+.bottom_mobile_links{
+    display: none;
+}
+@media (max-width:720px){
+    .side_nav_container{
+        height: 100px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .side_nav_main_a{
+        color: white;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        height: 100%;
+        padding-right: 50px;
+    }
+
+    .main{
+        margin-left: 0px;
+    }
+    .side_nav_main_a a{
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+    .side_nav_title{
+        height: 100%;
+    }
+    .side_nav_container{
+        height:100px;
+    }
+    .side_nav{
+        height: 100px;
+        width: 100%;
+        position: fixed;
+        z-index: 999;
+        background-color: #181818;
+    }
+    .about{
+        display: block;
+        padding-left: 0px;
+        text-align: center;
+    }
+    
+    .my_projects_p{
+        padding-left: 0px;
+        text-align: center;
+    }
+    .about_p{
+        width: 100%;
+        padding-left: 0px;
+    }
+    .about_right{
+        margin-right: 0%;
+    }
+    .contacts_left{
+        width: 100%;
+    }
+    .contacts_right{
+        width: 100%;
+    }
+    .contacts_container{
+        flex-direction: column-reverse;
+    }
+    .side_nav_p{
+        display: none;
+    }
+    .contact{
+        padding-left: 0px;
+    }
+    .contacts_map{
+        padding-left: 0px;
+    }
+    .contacts_send_but{
+        margin-left: 20px;
+    }
+    .contacts_poles{
+        padding-left: 0px;
+        padding-right: 20px;
+        margin-left: 20px;
+    }
+    .contacts_h2{
+        padding-left: 0px;
+        text-align: center;
+    }
+    .contacts_p{
+        padding-left: 0px;
+        text-align: center;
+        width: 100%;
+    }
+    .side_nav_main_a a{
+        font-size: 1.3rem;
+    }
+    .page_a{
+        font-size: 2rem;
+        padding: 20px;
+    }
+    .side_nav_main_links{
+        display: none;
+    }
+    .about{
+        margin-top: 150px;
+    }
+    .about_p{
+        font-size: 1.7rem;
+    }
+    .main_title_block{
+        margin-top: 50px;
+    }
+    .about_left{
+        padding: 20px;
+    }
+    .main_title_block_button{
+        font-size: 1.5rem;
+    }
+    .main_downtitle{
+        font-size: 1.3rem;
+    }
+    .my_projects_p{
+        font-size: 1.3rem;
+        width: 100%;
+    }
+    .my_projects_h2{
+        padding-left: 0;
+        text-align: center;
+    }
+    .my_skills_p{
+        font-size: 1.5rem;
+    }
+    .contacts_send_but {
+        font-size: 1.5rem;
+        width: 40%;
+    }
+    .contacts_p{
+        font-size: 1.3rem;
+    }
+    .my_skills_container_right{
+        padding-right: 60px;
+        padding-left: 70px;
+    }
+    .bottom_mobile_links{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .bottom_mobile_links a{
+        margin-left: 20px;
+    }
 }
